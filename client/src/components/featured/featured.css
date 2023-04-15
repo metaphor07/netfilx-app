@@ -1,0 +1,168 @@
+.featured {
+    height: 90vh;
+    position: relative;
+}
+
+.category {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.category select {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border: 1px solid white;
+    color: white;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+#genre {
+    z-index: 2;
+}
+
+.featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.info {
+    width: 35%;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.info img {
+    width: 400px;
+}
+
+.desc {
+    margin: 20px 0px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.play {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.more {
+    background-color: gray;
+    color: white;
+}
+
+.buttons span {
+    margin-left: 5px;
+}
+
+.title {
+    font-family: 'Shojumaru', cursive;
+    /* margin-top: 50px; */
+    letter-spacing: 2px;
+
+}
+
+@media only screen and (max-width: 400px) {
+    .featured {
+        height: 62vh;
+        position: relative;
+    }
+
+    .category {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        font-size: 13px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .category select {
+        cursor: pointer;
+        background-color: var(--main-color);
+        border: 1px solid white;
+        color: white;
+        margin-left: 10px;
+        padding: 3px;
+        width: 80px;
+
+    }
+
+    .featured img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info {
+        width: 40%;
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 18px !important;
+        font-family: 'Shojumaru', cursive;
+        letter-spacing: 2px;
+    }
+
+    .desc {
+        margin: 10px 0px;
+        font-size: 5px;
+    }
+
+    .buttons button {
+        padding: 3px 8px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .bIcon {
+        font-size: 18px !important;
+    }
+
+    .buttons span {
+        margin-left: 3px;
+    }
+}

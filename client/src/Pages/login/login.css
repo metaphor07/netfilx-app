@@ -1,0 +1,158 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 100%),
+        url("https://www.slashgear.com/img/gallery/netflix-4k-streaming-on-macos-big-sur-to-require-a-t2-security-chip/intro-import.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container form {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container input {
+    height: 40px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    padding-left: 10px;
+}
+
+.container input::placeholder {
+    color: lightgrey;
+}
+
+.container button {
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container span {
+    color: lightgray;
+}
+
+.container span b {
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 25px;
+        /* margin-left: 0px !important; */
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .formTitle {
+        margin-top: -8px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container form {
+        /* margin-top: 0px; */
+        width: 200px;
+        height: 300px;
+        padding: 22px;
+        border-radius: 5px;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .container input {
+        height: 30px;
+        border-radius: 5px;
+        background-color: gray;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .container input::placeholder {
+        color: lightgrey;
+    }
+
+    .container button {
+        height: 35px;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .container span {
+        color: lightgray;
+        font-size: 15px;
+    }
+
+    .container span b {
+        color: white;
+    }
+
+    .container small {
+        font-size: 12px;
+    }
+
+}

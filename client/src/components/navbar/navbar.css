@@ -1,0 +1,162 @@
+.navbar {
+    width: 100%;
+    /* height: 100%; */
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+}
+
+.scrolled {
+    background-color: var(--main-color);
+}
+
+.navContainer {
+    display: flex;
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    height: 25px;
+    margin-right: 40px;
+}
+
+.left span {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right img {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.icon {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.options {
+    display: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.options span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* when we hover on dropdown arrow then the options will show */
+.profile:hover .options {
+    display: flex;
+    flex-direction: column;
+    /* when we hover the arrow is move upwards. so, */
+    position: absolute
+}
+
+.inputSearch {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.navItem {
+    font-size: 20px;
+}
+
+.navItem:hover {
+    background-color: lightgray;
+    padding: 2px;
+    border-radius: 10px;
+    color: black;
+
+}
+
+.mobileIcon {
+    display: none !important;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .navContainer {
+        /* border: 1px solid green; */
+        display: flex;
+        padding: 0px 10px;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .left img {
+        display: none;
+    }
+
+    .left span {
+        margin-left: 0px;
+        font-size: 10px;
+        margin-right: 12px;
+    }
+
+    .inputSearch {
+        /* margin-top: px; */
+        width: 90px;
+    }
+
+    .icon {
+        font-size: 17px !important;
+        margin: 0 10px;
+    }
+
+    .navItem {
+        font-size: 10px;
+    }
+
+    .right img {
+        height: 20px;
+        width: 20px;
+        border-radius: 5px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .options {
+        display: none;
+        background-color: var(--main-color);
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 7px;
+    }
+
+    .options span {
+        display: none;
+    }
+
+    .mobileIcon {
+        display: block !important;
+        font-size: 16px !important;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,157 @@
+.listItem {
+    width: 225px;
+    height: 120px;
+    background-color: var(--main-color);
+    margin-right: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+}
+
+.listItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.listItem video {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.listItem:hover {
+    width: 325px;
+    height: 300px;
+    position: absolute;
+    top: -150px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+}
+
+.listItem:hover img {
+    height: 140px;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.itemIcons {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.itemicon {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 5px;
+}
+
+.itemInfoTop {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 7px; */
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+}
+
+.limit {
+    border: 1px solid gray;
+    padding: 1px 3px;
+    margin: 0 10px;
+}
+
+.desc {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.genre {
+    font-size: 14px;
+    color: lightgray;
+}
+
+@media only screen and (max-width: 400px) {
+    .listItem {
+        width: 180px;
+        height: 100px;
+    }
+
+    .listItem video {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .listItem:hover {
+        width: 280px;
+        height: 220px;
+        position: absolute;
+        top: -120px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+        box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+        border-radius: 5px;
+    }
+
+    .listItem:hover img {
+        height: 100px;
+    }
+
+    .itemInfo {
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+    }
+
+    .itemIcons {
+        display: flex;
+        margin-bottom: 6px;
+    }
+
+    .itemicon {
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 50%;
+        margin-right: 6px;
+        font-size: 3px;
+    }
+
+    .itemInfoTop {
+        display: flex;
+        align-items: center;
+        /* margin-bottom: 7px; */
+        font-size: 8px;
+        font-weight: 400;
+        color: gray;
+    }
+
+    .limit {
+        border: 1px solid gray;
+        padding: 1px 3px;
+        margin: 0 8px;
+    }
+
+    .desc {
+        font-size: 6px;
+        margin-bottom: 6px;
+    }
+
+    .genre {
+        font-size: 8px;
+        color: lightgray;
+    }
+
+}
