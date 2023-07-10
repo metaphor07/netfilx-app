@@ -1,5 +1,8 @@
 Project Overview.
 CLIENT SECTION:-
+> Client Side Url:- https://rupak-netflix.netlify.app/
+> Admin side url:- https://64ab83ac07c5a6167cd767ac--monumental-fudge-5e4014.netlify.app/
+
 1. User Registration Page:
 ![2023-05-12 (1)](https://github.com/metaphor07/netfilx-app/assets/93358507/6c71fc7a-02be-42c7-8120-1867c859376e)
 
