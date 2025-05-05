@@ -1,6 +1,6 @@
 Project Overview.
 CLIENT SECTION:-
-> Client Side Url:- https://rupak-netflix.netlify.app/
+> Client Side Url:- https://rupak7-streaming-site.netlify.app/
 > Admin side url:- https://64ab83ac07c5a6167cd767ac--monumental-fudge-5e4014.netlify.app/
 
 1. User Registration Page:
